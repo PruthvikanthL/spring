@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Computed Result</title>
+</head>
+<body>
+<h1>Here you Result</h1>
+Result:<h3><span th:text="${message}"></span></h3>
+Error Status:<h3><span th:text="${error}"></span></h3>
+<form action="/perform" method="post">
+  <h1>Perform Another Operations</h1><br>
+  <label>Enter first number</label>
+  <input type="number" name="num1" required><br>
+  <label>Enter the second number</label>
+  <input type="number" name="num2" required><br>
+  <label>Select the operation you need to perform</label><br>
+  <button type="submit" value="add" name="operation">Add</button>
+  <button type="submit" value="sub" name="operation">Sub</button>
+  <button type="submit" value="mul" name="operation">Mul</button>
+  <button type="submit" value="div" name="operation">Div</button>
+</form>
+</body>
+</html>
